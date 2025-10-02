@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  color: #333;
+  background: #fff3d2;
+}
+
+/* Nav */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: #82b62f;
+  color: white;
+}
+
+nav .logo {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+nav .menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav .menu li a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav .menu li a:hover {
+  text-decoration: underline;
+}
+
+/* Hero */
+.hero {
+  background: url("https://via.placeholder.com/1400x500") center/cover no-repeat;
+  color: rgb(0, 128, 6);
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+.hero .btn {
+  padding: 12px 24px;
+  background: #ffae00;
+  color: #000;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.hero .btn:hover {
+  background: #ffc94d;
+}
+
+/* Estatísticas */
+.stats {
+  display: flex;
+  justify-content: space-around;
+  background: #ffe2a3;
+  padding: 40px 20px;
+}
+
+.stats .stat h2 {
+  font-size: 2rem;
+  color: #82b62f;
+}
+
+/* Quem atendemos */
+.quem-atendemos {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+/* Depoimentos */
+.depoimentos {
+  background: #ffe2a3;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.depoimentos-galeria {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.depoimentos-galeria blockquote {
+  background: rgb(244, 255, 204);
+  padding: 15px 20px;
+  border-left: 4px solid #82b62f;
+  width: 250px;
+  font-style: italic;
+}
+
+/* Patrocinadores */
+.patrocinadores {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.patrocinadores .logos {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+/* Rodapé */
+footer {
+  background: #82b62f;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+footer .social a {
+    background-color:rgb(255, 250, 187);
+    padding: 5px;
+    border-radius: 10px;
+  color: #eea300;
+  text-decoration: none;
+  font-weight: 750;
+}
