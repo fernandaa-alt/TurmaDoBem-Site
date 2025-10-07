@@ -13,33 +13,43 @@ body {
 
 nav {
   display: flex;
-  justify-content: center;
   align-items: center;
   padding: 15px 30px;
-  background: #82b62f;
+  background: #446e01;
   color: white;
 }
 
 
 nav .logo img {
-  max-width: 10%;
-  ;
+  max-width: 13%;
 }
 
 nav .menu {
   list-style: none;
   display: flex;
   gap: 20px;
+  flex: 1;
+  justify-content: flex-end;
 }
 
 nav .menu li a {
-  color: white;
+  color: rgb(233, 255, 204);
+  font-weight: 700;
   text-decoration: none;
+  transition: 0.3s;
+  background-color: #82b62f;
+  padding: 8px 12px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  width: 150px;
   transition: 0.3s;
 }
 
 nav .menu li a:hover {
-  text-decoration: underline;
+  background-color: #eea300;
+  color: rgb(41, 30, 0);
+  transform: scale(1.1);
 }
 
 /* HERO */
@@ -47,6 +57,12 @@ nav .menu li a:hover {
   background: #fff3d2;
   text-align: center;
   padding: 50px 20px;
+}
+
+.hero img {
+  max-width: 70%;
+  height: auto;
+  margin-bottom: 20px;
 }
 
 /* Parte superior do hero */
@@ -63,6 +79,9 @@ nav .menu li a:hover {
 .hero-top p {
   color: #333;
   font-size: 1.1rem;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Painéis */
@@ -91,23 +110,6 @@ nav .menu li a:hover {
 .hero-right p {
   margin-bottom: 15px;
   color: #333;
-}
-
-/* Botões */
-.hero .btn {
-  display: inline-block;
-  padding: 12px 20px;
-  background: #ffae00;
-  color: #000;
-  font-weight: bold;
-  border-radius: 5px;
-  text-decoration: none;
-  transition: 0.3s;
-  margin-top: 10px;
-}
-
-.hero .btn:hover {
-  background: #ffc94d;
 }
 
 /* Responsividade */
@@ -215,6 +217,7 @@ footer .social a {
   color: #eea300;
   text-decoration: none;
   font-weight: 700;
+  transition: 0.3s;
 }
 
 footer .social a:hover {
