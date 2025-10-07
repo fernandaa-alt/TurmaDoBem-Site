@@ -11,19 +11,19 @@ body {
   background: #fff3d2;
 }
 
-/* Nav */
 nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 15px 30px;
   background: #82b62f;
   color: white;
 }
 
-nav .logo {
-  font-size: 1.4rem;
-  font-weight: bold;
+
+nav .logo img {
+  max-width: 10%;
+  ;
 }
 
 nav .menu {
@@ -42,35 +42,83 @@ nav .menu li a:hover {
   text-decoration: underline;
 }
 
-/* Hero */
+/* HERO */
 .hero {
-  background: url("https://via.placeholder.com/1400x500") center/cover no-repeat;
-  color: rgb(0, 128, 6);
+  background: #fff3d2;
   text-align: center;
-  padding: 100px 20px;
+  padding: 50px 20px;
 }
 
-.hero h1 {
-  font-size: 2.5rem;
+/* Parte superior do hero */
+.hero-top {
+  margin-bottom: 40px;
+}
+
+.hero-top h1 {
+  font-size: 2.2rem;
+  color: #006400;
   margin-bottom: 10px;
 }
 
-.hero p {
-  margin-bottom: 20px;
-  font-size: 1.2rem;
+.hero-top p {
+  color: #333;
+  font-size: 1.1rem;
 }
 
+/* Painéis */
+.hero-panels {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.hero-left, .hero-middle, .hero-right {
+  background: #ffe2a3;
+  border-radius: 10px;
+  padding: 25px;
+  flex: 1 1 300px;
+  box-shadow: 0 2px 5px #805023
+}
+
+.hero-left h2, .hero-middle h2,
+.hero-right h2 {
+  color: #82b62f;
+  margin-bottom: 15px;
+}
+
+.hero-left p, .hero-middle p,
+.hero-right p {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* Botões */
 .hero .btn {
-  padding: 12px 24px;
+  display: inline-block;
+  padding: 12px 20px;
   background: #ffae00;
   color: #000;
   font-weight: bold;
   border-radius: 5px;
   text-decoration: none;
+  transition: 0.3s;
+  margin-top: 10px;
 }
 
 .hero .btn:hover {
   background: #ffc94d;
+}
+
+/* Responsividade */
+@media (min-width: 768px) {
+  .hero-buttons {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .hero .btn {
+    width: auto;
+  }
 }
 
 /* Estatísticas */
@@ -114,17 +162,37 @@ nav .menu li a:hover {
   font-style: italic;
 }
 
-/* Patrocinadores */
-.patrocinadores {
+/* Apoiadores */
+.apoiadores, .mantenedores, .premios {
   padding: 40px 20px;
   text-align: center;
+  background-color: #ffffff;
+  border-top: 2px solid #eeeeee
 }
 
-.patrocinadores .logos {
+.apoiadores h2, .mantenedores h2, .premios h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #82b62f;
+}
+
+.apoiadores .logos, .mantenedores .logos, .premios .logos {
   display: flex;
   justify-content: center;
-  gap: 30px;
+  align-items: center;
+  flex-wrap: wrap; 
+  gap: 40px;
   margin-top: 20px;
+}
+
+.apoiadores .logos img, .mantenedores .logos img, .premios .logos img {
+  max-height: 70px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.apoiadores .logos img:hover, .mantenedores .logos img:hover, .premios .logos img:hover {
+  transform: scale(1.05);
 }
 
 /* Rodapé */
@@ -136,11 +204,20 @@ footer {
   margin-top: 40px;
 }
 
+footer p {
+  margin-bottom: 10px;
+}
+
 footer .social a {
-    background-color:rgb(255, 250, 187);
-    padding: 5px;
-    border-radius: 10px;
+  background-color:rgb(255, 250, 187);
+  padding: 10px;
+  border-radius: 10px;
   color: #eea300;
   text-decoration: none;
-  font-weight: 750;
+  font-weight: 700;
+}
+
+footer .social a:hover {
+  background-color: #eea300;
+  color: white;
 }
