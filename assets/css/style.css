@@ -201,7 +201,8 @@ nav .menu li a:hover {
 footer {
   background: #82b62f;
   color: white;
-  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 70px;
   text-align: center;
   margin-top: 40px;
 }
