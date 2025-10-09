@@ -225,3 +225,228 @@ footer .social a:hover {
   background-color: #eea300;
   color: white;
 }
+
+/* ---------- SOBRE PAGINA ---------- */
+ 
+/* Introdução */
+.intro-sobre {
+  background: #ffe2a3;
+  padding: 60px 30px;
+  text-align: center;
+  border-bottom: 2px solid #f3d46b;
+}
+ 
+.intro-sobre h1 {
+  font-size: 2.2rem;
+  color: #446e01;
+  margin-bottom: 25px;
+}
+ 
+.intro-sobre p {
+  max-width: 950px;
+  margin: 0 auto 20px;
+  color: #333;
+}
+ 
+.intro-sobre a {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 15px;
+  background: #82b62f;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 700;
+  transition: 0.3s;
+}
+ 
+.intro-sobre a:hover {
+  background: #eea300;
+  color: #2b1c00;
+}
+ 
+/* Missão e Valores */
+.missao-valores {
+  background: #fff8e0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding: 60px 20px;
+  text-align: center;
+}
+ 
+.missao-valores div {
+  background: #fffbe8;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(68, 110, 1, 0.2);
+  padding: 25px;
+  flex: 1 1 300px;
+  max-width: 400px;
+}
+ 
+.missao-valores h2 {
+  color: #82b62f;
+  margin-bottom: 15px;
+}
+ 
+.missao-valores p {
+  color: #333;
+  font-size: 1rem;
+}
+ 
+/* Como nasceu */
+.como-nasceu {
+  padding: 60px 30px;
+  background: #ffe2a3;
+  text-align: center;
+}
+ 
+.como-nasceu h2 {
+  color: #82b62f;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+ 
+.como-nasceu p {
+  max-width: 900px;
+  margin: 0 auto 15px;
+}
+ 
+/* Fundador */
+.fundador {
+  background: #fffbe8;
+  padding: 60px 30px;
+  text-align: center;
+}
+ 
+.fundador h2 {
+  color: #82b62f;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+ 
+.fundador p {
+  max-width: 900px;
+  margin: 0 auto 15px;
+}
+ 
+.imagem-fundador {
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  margin-bottom: 25px;
+ 
+}
+ 
+/* Conselhos */
+ 
+.conselhos {
+  background: #ffe2a3;
+  padding: 60px 30px;
+  text-align: center;
+}
+ 
+.conselhos h2 {
+  color: #446e01;
+  margin-bottom: 40px;
+  font-size: 1.9rem;
+  width: 100%;
+}
+ 
+.conselhos .cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+ 
+.conselhos .cards div {
+  background: #fffbe8;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(68, 110, 1, 0.2);
+  padding: 25px;
+  flex: 1 1 300px;
+  margin: 10px;
+  text-align: left;
+}
+ 
+.conselhos h3 {
+  color: #82b62f;
+  margin-bottom: 10px;
+}
+ 
+.conselhos h4 {
+  color: #eea300;
+  margin-top: 10px;
+}
+ 
+/* Conselhos */
+.conselhos {
+  background: #ffe2a3;
+  padding: 60px 30px;
+  text-align: center;
+}
+ 
+.conselhos h2 {
+  color: #446e01;
+  margin-bottom: 40px;
+  font-size: 1.9rem;
+}
+ 
+.conselhos div {
+  background: #fffbe8;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(68, 110, 1, 0.2);
+  padding: 25px;
+  flex: 1 1 300px;
+  margin: 10px;
+}
+ 
+.conselhos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+ 
+.conselhos h3 {
+  color: #82b62f;
+  margin-bottom: 10px;
+}
+ 
+.conselhos h4 {
+  color: #eea300;
+  margin-top: 10px;
+}
+ 
+/* Diretores */
+.diretores {
+  background: #fff8e0;
+  text-align: center;
+  padding: 60px 30px;
+}
+ 
+.diretores h2 {
+  color: #82b62f;
+  margin-bottom: 20px;
+}
+ 
+.diretores p {
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+ 
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+  .missao-valores {
+    flex-direction: column;
+  }
+  .conselhos {
+    flex-direction: column;
+  }
+  nav .logo img {
+    max-width: 25%;
+  }
+}
