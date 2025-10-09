@@ -304,3 +304,47 @@ footer .social a:hover {
   background: #446e01;
 }
  
+/* ---------- FAQ PAGINA ---------- */
+h2 {
+  text-align: center;
+  color: #446e01;
+  margin-top: 60px;
+  margin-bottom: 40px;
+  font-size: 2rem;
+}
+ 
+.faq {
+  background: #fff8e0;
+  padding: 60px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  max-width: 900px;
+  margin: 0 auto 80px auto;
+}
+ 
+.faq-item {
+  background: #fffbe8;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(68, 110, 1, 0.2);
+  padding: 25px 30px;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+ 
+.faq-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(68, 110, 1, 0.25);
+}
+ 
+.faq-item h3 {
+  color: #82b62f;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+ 
+.faq-item p {
+  color: #446e01;
+  line-height: 1.6;
+  font-size: 1rem;
+}
