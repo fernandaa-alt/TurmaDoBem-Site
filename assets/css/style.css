@@ -225,3 +225,82 @@ footer .social a:hover {
   background-color: #eea300;
   color: white;
 }
+
+/* ---------- CONTATO PAGINA ---------- */
+.form {
+  background: #fff8e0;
+  padding: 60px 30px;
+  text-align: center;
+}
+ 
+.form h1 {
+  color: #446e01;
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+ 
+.form h2 {
+  color: #82b62f;
+  margin-bottom: 40px;
+  font-size: 1.4rem;
+}
+ 
+.form form {
+  background: #fffbe8;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(68, 110, 1, 0.2);
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 35px 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: left;
+}
+ 
+.form label {
+  color: #446e01;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+ 
+.form input,
+.form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #cde0a3;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #fff;
+  transition: 0.3s ease;
+}
+ 
+.form input:focus,
+.form textarea:focus {
+  border-color: #82b62f;
+  outline: none;
+  box-shadow: 0 0 4px rgba(130, 182, 47, 0.4);
+}
+ 
+.form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+ 
+.form button {
+  background: #82b62f;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 1rem;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+ 
+.form button:hover {
+  background: #446e01;
+}
+ 
