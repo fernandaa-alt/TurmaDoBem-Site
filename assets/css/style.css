@@ -104,6 +104,7 @@ nav .menu li a:hover {
 .hero-right h2 {
   color: #82b62f;
   margin-bottom: 15px;
+  margin-top: auto;
 }
 
 .hero-left p, .hero-middle p,
