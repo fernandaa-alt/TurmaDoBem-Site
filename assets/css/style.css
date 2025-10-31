@@ -576,3 +576,17 @@ h2 {
     max-width: 25%;
   }
 }
+
+/* ----------------- QUEM SOMOS PAGINA ----------------- */
+
+.membro-rede {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 5px 30px;
+  background: #82b62f;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 700;
+  transition: 0.3s;
+}
