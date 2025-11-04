@@ -590,3 +590,115 @@ h2 {
   font-weight: 700;
   transition: 0.3s;
 }
+
+/* ----------------- FORMULARIOS DE LOGIN E CADASTRO ----------------- */
+
+.forms-container {
+  display: flex;              
+  gap: 40px;                  
+  justify-content: center;   
+  align-items: flex-start;    
+  flex-wrap: wrap;          
+  padding: 20px;
+}
+
+.forms-container .form {
+  flex: 1 1 420px;   
+  max-width: 520px;   
+  box-sizing: border-box;
+}
+
+.form {
+  background: #fff8e0;
+  padding: 40px 30px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(68,110,1,0.15);
+}
+
+/* Mensagens de erro */
+.error-message {
+  color: #b00020;
+  font-size: 0.9rem;
+  margin-top: 6px;
+  margin-bottom: 0;
+  text-align: left;
+}
+
+.has-error {
+  outline: 2px solid rgba(176,0,32,0.08);
+  box-shadow: 0 0 0 3px rgba(176,0,32,0.04);
+}
+
+/* toggle buttons (Login/Cadastrar) */
+.forms-toggle button {
+  background: transparent;
+  border: 1px solid rgba(68,110,1,0.08);
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.forms-toggle button.active {
+  background: #82b62f;
+  color: white;
+  border-color: #82b62f;
+}
+
+/* Mensagens de erro */
+.error-msg {
+  font-size: 0.9rem;
+  margin-top: 3px;
+}
+
+/* Toast de sucesso/erro */
+.toast {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #82b62f;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 6px;
+  opacity: 0;
+  transition: all 0.4s ease;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  z-index: 9999;
+}
+.toast.error {
+  background: #b50000;
+}
+.toast.visible {
+  opacity: 1;
+  transform: translateY(-5px);
+}
+
+
+
+.form-container {
+  max-width: 700px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.toggle-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.toggle-buttons button {
+  padding: 10px 20px;
+  background: #82b62f;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.toggle-buttons button:hover {
+  background: #446e01;
+}
+
+
+
