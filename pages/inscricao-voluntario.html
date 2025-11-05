@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inscrição Voluntário - Turma do Bem</title>
-    <link rel="stylesheet" href="../assets/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inscrição Voluntário - Turma do Bem</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
 </head>
+
 <body>
 
   <header>
@@ -25,24 +27,103 @@
   </header>
 
   <main>
-      
-      <section class="form">
-        <h1>Inscrição para Voluntário</h1>
-    <form action="#" method="post">
-      <label for="nome">Nome:</label>
-      <input type="text" id="nome" name="nome" required>
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
+    <section class="form">
+      <h1>Inscrição para Voluntário</h1>
+      <form action="#" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
 
-      <label for="telefone">Telefone:</label>
-      <input type="tel" id="telefone" name="telefone" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
 
-      <label for="cpf">CPF:</label>
-      <input type="text" id="cpf" name="cpf" required>
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" required>
 
-      <button type="submit">Enviar</button>
-    </form>
+        <label for="cpf">CPF:</label>
+        <input type="text" id="cpf" name="cpf" required>
+
+        <label for="especialidades">especialidades:</label>
+        <input type="text" id="especialidades" name="especialidades" required>
+
+        <label for="rg">RG:</label>
+        <input type="text" id="rg" name="rg" required>
+
+        <label for="cnpj">CNPJ:</label>
+        <input type="text" id="cnpj" name="cnpj" required>
+
+        <label for="endereco-residencial">Endereço Residencial:</label>
+        <input type="text" id="endereco-residencial" name="endereco-residencial" required>
+
+        <label for="endereco-comercial">Endereço Comercial:</label>
+        <input type="text" id="endereco-comercial" name="endereco-comercial" required>
+
+        <label for="telefone-comercial">Telefone Comercial:</label>
+        <input type="tel" id="telefone-comercial" name="telefone-comercial" required>
+
+        <label for="cro">CRO:</label>
+        <input type="text" id="cro" name="cro" required>
+
+        <label for="recorrencia">Já foi voluntário do TDB?</label>
+        <select id="recorrencia" name="recorrencia" required>
+          <option value="none"></option>
+          <option value="sim">Sim</option>
+          <option value="nao">Não</option>
+        </select>
+
+        <label for="indicado">Foi indicado por alguém? Se sim, quem?</label>
+        <input type="text" id="indicado" name="indicado">
+
+        <label for="modo-atendimento">Você deseja:</label>
+        <select name="modo-atendimento" id="modo-atendimento" required>
+          <option value="none"></option>
+          <option value="apenas-consultorio">Apenas atender no consultório</option>
+          <option value="apenas-triagens">Apenas realizar triagens</option>
+          <option value="consultorio-triagens">Atender no consultório e realizar triagens</option>
+        </select>
+
+        <label for="publico">Qual público você deseja atender?</label>
+        <select name="publico" id="publico" required>
+          <option value="none"></option>
+          <option value="apenas-criancas">Apenas crianças e adolescentes entre 11 e 17 anos</option>
+          <option value="apenas-mulheres">Apenas mulheres cis ou trans vítimas de violência</option>
+          <option value="criancas-mulheres">Ambos públicos</option>
+        </select>
+
+        <div class="checkbox-card">
+          <input type="checkbox" id="aceite" name="aceite" required>
+          <label for="aceite">
+            <strong>Declaração de aceite:</strong><br>
+            Declaro, para os devidos fins, que as informações contidas na presente ficha são verdadeiras e assumo o
+            compromisso de apresentar, quando solicitado, os comprovantes originais, bem como arcar com as penalidades
+            por quaisquer informações falsas.
+          </label>
+        </div>
+
+        <div class="checkbox-card">
+          <input type="checkbox" id="aceite" name="aceite" required>
+          <label for="aceite">
+            <strong>Autorização ao Uso de Dados Pessoais:</strong><br>
+            Nos termos da Lei Geral de Proteção de Dados Pessoais (LGPD), Lei nº 13.709, de 14 de agosto de 2018, o
+            Cirurgião-Dentista autoriza a Turma do Bem a usar as seguintes informações: seu nome e de sua clínica,
+            fotos, nomes e testemunhos de pacientes — desde que com a expressa autorização destes —, na forma da LGPD, e
+            exclusivamente nos materiais de divulgação e projetos da Turma do Bem (website, mídias sociais, material
+            promocional impresso e digital) sem ônus de espécie alguma para o Cirurgião-Dentista e/ou Turma do Bem. Caso
+            não esteja de acordo, o Cirurgião-Dentista deverá informar por escrito.
+          </label>
+        </div>
+
+        <div class="checkbox-card">
+          <input type="checkbox" id="aceite" name="aceite" required>
+          <label for="aceite">
+            <strong>Termo de Consentimento:</strong><br>
+            Através do presente instrumento, autorizo expressamente a Turma do Bem, inscrita no CNPJ sob n° 05.413.029/0001-19, a disponibilizar e dispor de meus dados pessoais e dados pessoais sensíveis, exclusivamente a seus parceiros devidamente credenciados perante essa associação sem fins lucrativos, para divulgação de campanhas e ofertas de descontos, sendo estes responsáveis pela manutenção de medidas de segurança, técnicas e administrativas aptas a proteger os dados pessoais de acessos não autorizados e de situações acidentais ou ilícitas de destruição, perda, alteração, comunicação ou qualquer forma de tratamento inadequado ou ilícito, nos termos da Lei Geral de Proteção de Dados Pessoais (LGPD), Lei nº 13.709, de 14 de agosto de 2018.  
+          </label>
+        </div>
+
+
+        <button type="submit">Enviar</button>
+      </form>
     </section>
   </main>
 
@@ -55,6 +136,7 @@
       <a href="#" target="_blank">Twitter</a>
     </div>
   </footer>
-<script src="../assets/js/forms.js"></script>
+  <script src="../assets/js/forms.js"></script>
 </body>
+
 </html>

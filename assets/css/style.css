@@ -700,5 +700,58 @@ h2 {
   background: #446e01;
 }
 
+.checkbox-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  background: #fff8e0;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  user-select: none;
+  margin-top: 20px;
+}
+
+.checkbox-card:hover {
+  border-color: #82b62f;
+  box-shadow: 0 2px 8px rgba(130,182,47,0.2);
+}
+
+.checkbox-card input[type="checkbox"] {
+  width: 22px;
+  height: 22px;
+  appearance: none;
+  border: 2px solid #82b62f;
+  border-radius: 6px;
+  margin-top: 2px;
+  position: relative;
+  cursor: pointer;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.checkbox-card input[type="checkbox"]:checked {
+  background: #82b62f;
+  border-color: #446e01;
+}
+
+.checkbox-card input[type="checkbox"]:checked::after {
+  content: "✓";
+  color: white;
+  font-size: 16px;
+  position: absolute;
+  top: 1px;
+  left: 4px;
+}
+
+.checkbox-card label {
+  cursor: pointer;
+  text-align: left;
+  color: #333;
+  line-height: 1.4;
+  flex: 1;
+}
+
 
 
