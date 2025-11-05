@@ -753,5 +753,22 @@ h2 {
   flex: 1;
 }
 
+select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background-color: #ffffff;
+  color: #333;
+  font-size: 1em;
+  margin-top: 5px;
+}
+
+select:focus {
+  border-color: #82b62f;
+  outline: none;
+  box-shadow: 0 0 5px #82b62f;
+}
+
 
 

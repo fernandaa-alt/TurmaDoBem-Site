@@ -19,14 +19,18 @@ document.addEventListener("DOMContentLoaded", () => {
       }
 
       const formData = Object.fromEntries(new FormData(form).entries());
-
+      console.table(formData);
+      
       try {
-        // Simula envio real
+        // Simula envio real (você pode depois trocar por fetch para API real)
         await new Promise((resolve) => setTimeout(resolve, 800));
 
-        showToast("✅ Enviado com sucesso!");
-        form.reset();
+        showToast("✅ Formulário enviado com sucesso!");
+        console.groupCollapsed("📋 Dados enviados:");
         console.table(formData);
+        console.groupEnd();
+
+        form.reset();
       } catch (err) {
         showToast("❌ Erro ao enviar o formulário. Tente novamente.", "error");
         console.error(err);
@@ -35,7 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
       disableButton(form, false);
     });
 
-    // Máscaras automáticas
+    // === Máscaras automáticas ===
     form.querySelectorAll("input").forEach((input) => {
       if (input.type === "tel") maskPhone(input);
       if (input.name === "cpf") maskCPF(input);
@@ -49,41 +53,57 @@ document.addEventListener("DOMContentLoaded", () => {
   const showRegisterBtn = document.getElementById("show-register");
 
   if (showLoginBtn && showRegisterBtn) {
-    showLoginBtn.addEventListener("click", () => {
-      loginSection.style.display = "block";
-      registerSection.style.display = "none";
-    });
-
-    showRegisterBtn.addEventListener("click", () => {
-      registerSection.style.display = "block";
-      loginSection.style.display = "none";
-    });
-
-    // Exibe o login por padrão
-    loginSection.style.display = "block";
-    registerSection.style.display = "none";
+    showLoginBtn.addEventListener("click", () => toggleForms("login"));
+    showRegisterBtn.addEventListener("click", () => toggleForms("register"));
+    toggleForms("login"); // mostra login por padrão
   }
 });
 
+// === Alternância com animação suave ===
+function toggleForms(target) {
+  const loginSection = document.getElementById("login-section");
+  const registerSection = document.getElementById("register-section");
 
-// === Funções de Validação ===
+  if (target === "login") {
+    loginSection.style.display = "block";
+    registerSection.style.display = "none";
+  } else {
+    registerSection.style.display = "block";
+    loginSection.style.display = "none";
+  }
+}
+
+// === Validação ===
 function validateForm(form) {
   let valid = true;
   const emailRegex = /^(?!.*\.\.)[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
-  form.querySelectorAll("input, textarea").forEach((field) => {
+  form.querySelectorAll("input, select, textarea").forEach((field) => {
     const value = field.value.trim();
-    const fieldType = field.type;
+    const type = field.type;
     const name = field.name;
 
-    if (!value) {
+    // Campo obrigatório
+    if (field.hasAttribute("required") && !value) {
       showError(field, "Este campo é obrigatório.");
       valid = false;
-    } else if (fieldType === "email" && !emailRegex.test(value)) {
+    }
+
+    // E-mail
+    else if (type === "email" && value && !emailRegex.test(value)) {
       showError(field, "Digite um e-mail válido (ex: nome@exemplo.com).");
       valid = false;
-    } else if (name === "cpf" && !isValidCPF(value)) {
+    }
+
+    // CPF
+    else if (name === "cpf" && value && !isValidCPF(value)) {
       showError(field, "CPF inválido.");
+      valid = false;
+    }
+
+    // Checkbox obrigatório
+    else if (type === "checkbox" && field.required && !field.checked) {
+      showError(field, "Você deve marcar esta opção para continuar.");
       valid = false;
     }
   });
@@ -91,6 +111,7 @@ function validateForm(form) {
   return valid;
 }
 
+// === Erros e mensagens ===
 function clearMessages(form) {
   form.querySelectorAll(".error-msg").forEach((el) => el.remove());
 }
@@ -106,7 +127,6 @@ function disableButton(form, disable) {
   const button = form.querySelector("button[type='submit']");
   if (button) button.disabled = disable;
 }
-
 
 // === Máscaras ===
 function maskPhone(input) {
@@ -133,7 +153,6 @@ function maskCPF(input) {
   });
 }
 
-
 // === CPF Validator ===
 function isValidCPF(cpf) {
   cpf = cpf.replace(/[^\d]+/g, "");
@@ -151,7 +170,6 @@ function isValidCPF(cpf) {
   if (resto === 10 || resto === 11) resto = 0;
   return resto === parseInt(cpf.substring(10, 11));
 }
-
 
 // === Toasts ===
 function showToast(message, type = "success") {
