@@ -1,86 +1,89 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="../assets/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
 </head>
+
 <body>
-    <header>
-        <nav>
-            <div class="logo">
-                <a href="../index.html"><img src="../assets/images/logo-tdb.png" alt="logo da Turma do Bem"></a>
-            </div>
-            <ul class="menu">
-                <li><a href="./sobre.html">Sobre</a></li>
-                <li><a href="./contato.html">Contato</a></li>
-                <li><a href="./quem-somos.html">Quem Somos</a></li>
-                <li><a href="./faq.html">FAQ</a></li>
-                <li><a href="./login.html">Login</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <nav>
+      <div class="logo">
+        <a href="../index.html"><img src="../assets/images/logo-tdb.png" alt="logo da Turma do Bem"></a>
+      </div>
+      <ul class="menu">
+        <li><a href="./sobre.html">Sobre</a></li>
+        <li><a href="./contato.html">Contato</a></li>
+        <li><a href="./quem-somos.html">Quem Somos</a></li>
+        <li><a href="./faq.html">FAQ</a></li>
+        <li><a href="./login.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <main>
-        <div class="form-container">
-  <div class="toggle-buttons">
-    <button id="show-login">Login</button>
-    <button id="show-register">Cadastro</button>
-  </div>
+  <main>
+    <div class="form-container">
+      <div class="toggle-buttons">
+        <button id="show-login">Login</button>
+        <button id="show-register">Cadastro</button>
+      </div>
 
-  <section id="login-section" class="form active">
-    <h1>Login</h1>
-    <form id="login-form">
-      <label for="login-email">Email:</label>
-      <input type="email" id="login-email" name="email" required>
+      <section id="login-section" class="form active">
+        <h1>Login</h1>
+        <form id="login-form">
+          <label for="login-email">Email:</label>
+          <input type="email" id="login-email" name="email" required>
 
-      <label for="login-senha">Senha:</label>
-      <input type="password" id="login-senha" name="senha" required>
+          <label for="login-senha">Senha:</label>
+          <input type="password" id="login-senha" name="senha" required>
 
-      <button type="submit" id="login-btn">Entrar</button>
-      <p class="message" id="login-message"></p>
-    </form>
-  </section>
+          <button type="submit" id="login-btn">Entrar</button>
+          <p class="message" id="login-message"></p>
+        </form>
+      </section>
 
-  <section id="register-section" class="form">
-    <h1>Cadastre-se</h1>
-    <form id="register-form">
-      <label for="nome">Nome:</label>
-      <input type="text" id="nome" name="nome" required>
+      <section id="register-section" class="form">
+        <h1>Cadastre-se</h1>
+        <form id="register-form">
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" required>
 
-      <label for="cpf">CPF:</label>
-      <input type="text" id="cpf" name="cpf" required maxlength="14">
+          <label for="cpf">CPF:</label>
+          <input type="text" id="cpf" name="cpf" required maxlength="14">
 
-      <label for="data-nascimento">Data de Nascimento:</label>
-      <input type="date" id="data-nascimento" name="data-nascimento" required>
+          <label for="data-nascimento">Data de Nascimento:</label>
+          <input type="date" id="data-nascimento" name="data-nascimento" required>
 
-      <label for="telefone">Telefone:</label>
-      <input type="tel" id="telefone" name="telefone" required maxlength="15">
+          <label for="telefone">Telefone:</label>
+          <input type="tel" id="telefone" name="telefone" required maxlength="15">
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
 
-      <label for="senha">Senha:</label>
-      <input type="password" id="senha" name="senha" required>
+          <label for="senha">Senha:</label>
+          <input type="password" id="senha" name="senha" required>
 
-      <button type="submit" id="register-btn">Cadastrar</button>
-      <p class="message" id="register-message"></p>
-    </form>
-  </section>
-</div>
+          <button type="submit" id="register-btn">Cadastrar</button>
+          <p class="message" id="register-message"></p>
+        </form>
+      </section>
+    </div>
 
-    </main>
+  </main>
 
-    <footer>
-        <p>&copy; 2023 Turma do Bem - Todos os direitos reservados.</p>
-        <div class="social">
-            <a href="#" target="_blank">Facebook</a>
-            <a href="#" target="_blank">Instagram</a>
-            <a href="#" target="_blank">LinkedIn</a>
-            <a href="#" target="_blank">Twitter</a>
-        </div>
-    </footer>
-<script src="../assets/js/forms.js"></script>
+  <footer>
+    <p>&copy; 2023 Turma do Bem - Todos os direitos reservados.</p>
+    <div class="social">
+      <a href="#" target="_blank">Facebook</a>
+      <a href="#" target="_blank">Instagram</a>
+      <a href="#" target="_blank">LinkedIn</a>
+      <a href="#" target="_blank">Twitter</a>
+    </div>
+  </footer>
+  <script src="../assets/js/forms.js"></script>
 </body>
+
 </html>

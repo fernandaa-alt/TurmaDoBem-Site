@@ -20,9 +20,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const formData = Object.fromEntries(new FormData(form).entries());
       console.table(formData);
-      
+
       try {
-        // Simula envio real (você pode depois trocar por fetch para API real)
         await new Promise((resolve) => setTimeout(resolve, 800));
 
         showToast("✅ Formulário enviado com sucesso!");
@@ -39,14 +38,12 @@ document.addEventListener("DOMContentLoaded", () => {
       disableButton(form, false);
     });
 
-    // === Máscaras automáticas ===
     form.querySelectorAll("input").forEach((input) => {
       if (input.type === "tel") maskPhone(input);
       if (input.name === "cpf") maskCPF(input);
     });
   });
 
-  // === Alternância entre Login e Cadastro ===
   const loginSection = document.getElementById("login-section");
   const registerSection = document.getElementById("register-section");
   const showLoginBtn = document.getElementById("show-login");
@@ -55,11 +52,10 @@ document.addEventListener("DOMContentLoaded", () => {
   if (showLoginBtn && showRegisterBtn) {
     showLoginBtn.addEventListener("click", () => toggleForms("login"));
     showRegisterBtn.addEventListener("click", () => toggleForms("register"));
-    toggleForms("login"); // mostra login por padrão
+    toggleForms("login");
   }
 });
 
-// === Alternância com animação suave ===
 function toggleForms(target) {
   const loginSection = document.getElementById("login-section");
   const registerSection = document.getElementById("register-section");
@@ -73,7 +69,6 @@ function toggleForms(target) {
   }
 }
 
-// === Validação ===
 function validateForm(form) {
   let valid = true;
   const emailRegex = /^(?!.*\.\.)[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
