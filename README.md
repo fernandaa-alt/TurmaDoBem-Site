@@ -7,3 +7,4 @@ FIAP Challenge - Sprint 1
 * [Fernanda - RM567826](https://github.com/fernandaa-alt)
 
 ### 🔗 Link do site: https://fernandaa-alt.github.io/TurmaDoBem-Site/
+### 🔗 Link do Git: https://github.com/fernandaa-alt/TurmaDoBem-Site.git
