@@ -179,3 +179,16 @@ function showToast(message, type = "success") {
     setTimeout(() => toast.remove(), 400);
   }, 3000);
 }
+
+// === MENU HAMBURGUER ===
+document.addEventListener("DOMContentLoaded", () => {
+  const hamburger = document.getElementById("hamburger");
+  const menu = document.querySelector(".menu");
+
+  if (hamburger && menu) {
+    hamburger.addEventListener("click", () => {
+      menu.classList.toggle("show");
+    });
+  }
+});
+

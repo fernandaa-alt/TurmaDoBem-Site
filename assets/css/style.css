@@ -770,5 +770,226 @@ select:focus {
   box-shadow: 0 0 5px #82b62f;
 }
 
+/* =========================================================
+   RESPONSIVIDADE — BREAKPOINTS
+   ========================================================= */
+
+/* Extra small devices (phones, 600px and down) */
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav .menu {
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    gap: 10px;
+    padding-top: 10px;
+  }
+
+  nav .menu li a {
+    width: 100%;
+    text-align: left;
+    padding: 10px 15px;
+  }
+
+  .hero {
+    padding: 30px 10px;
+  }
+
+  .hero-top h1 {
+    font-size: 1.6rem;
+  }
+
+  .hero-top p {
+    font-size: 1rem;
+  }
+
+  .hero img {
+    max-width: 100%;
+  }
+
+  .stats {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .depoimentos-galeria {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer {
+    padding: 30px 15px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media (min-width: 600px) {
+  .hero-panels {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-left, .hero-middle, .hero-right {
+    flex: 1 1 100%;
+    max-width: 400px;
+  }
+
+  .stats {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media (min-width: 768px) {
+  nav .menu {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .hero-panels {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .hero-left, .hero-middle, .hero-right {
+    flex: 1 1 300px;
+  }
+
+  .missao-valores, .conselhos {
+    flex-direction: row;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media (min-width: 992px) {
+  nav {
+    padding: 15px 60px;
+  }
+
+  .hero-top h1 {
+    font-size: 2.4rem;
+  }
+
+  .hero-top p {
+    font-size: 1.2rem;
+  }
+
+  .stats {
+    justify-content: space-around;
+  }
+
+  .depoimentos-galeria blockquote {
+    width: 280px;
+  }
+}
+
+/* Extra-large devices (large laptops and desktops, 1300px and up) */
+@media (min-width: 1300px) {
+  .hero-top h1 {
+    font-size: 2.8rem;
+  }
+
+  .hero-top p {
+    max-width: 1000px;
+  }
+
+  .hero-panels {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .stats {
+    margin: 0 auto;
+  }
+
+  footer {
+    font-size: 1.1rem;
+  }
+}
+
+/* Layout padrão (larger screens) */
+.hero-panels {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  gap: 20px;
+}
+
+/* Layout empilhado (mobile) */
+@media (max-width: 600px) {
+  .hero-panels {
+    flex-direction: column;
+    align-items: center; 
+    gap: 16px;
+  }
+
+  .hero-left,
+  .hero-middle,
+  .hero-right {
+    width: 90%;
+  }
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  flex-wrap: wrap; 
+  gap: 12px; 
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 28px;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  position: relative;
+  z-index: 100;
+}
+
+.navbar .logo img {
+  height: 48px;
+  width: auto;
+  object-fit: contain;
+  transition: height 0.2s ease;
+}
+
+.nav-links {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+  background: rgba(68,110,1,0.08);
+  color: #446e01;
+}
+
+
+
+
+
 
 
