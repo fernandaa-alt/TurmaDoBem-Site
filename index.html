@@ -6,20 +6,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Turma do Bem - Início</title>
   <link rel="stylesheet" href="./assets/css/style.css">
+  <script src="./assets/js/forms.js" defer></script>
 </head>
 
 <body>
 
   <header>
-    <nav>
-      <div class="logo">
-        <a href="#"><img src="./assets/images/logo-tdb.png" alt="logo da Turma do Bem"></a>
-      </div>
 
-      <div class="hamburger" id="hamburger">
-        ☰
-      </div>
-
+    <nav id="navbar">
+        <a href="#"><img src="./assets/images/logo-tdb.png" alt="logo da Turma do Bem" width="120px"></a>
+      
+   <aside id="sidebar">
+       <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+      <button id="hamburger" class="menu-icon">☰</button>
+   </aside>
+      
       <ul class="menu">
         <li><a href="./pages/sobre.html">Sobre</a></li>
         <li><a href="./pages/contato.html">Contato</a></li>
@@ -29,6 +30,7 @@
         <li><a href="./pages/login.html">Login</a></li>
       </ul>
     </nav>
+    
   </header>
 
   <!-- HERO painéis -->

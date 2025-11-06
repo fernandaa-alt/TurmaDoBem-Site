@@ -182,7 +182,7 @@ function showToast(message, type = "success") {
 
 // === MENU HAMBURGUER ===
 document.addEventListener("DOMContentLoaded", () => {
-  const hamburger = document.getElementById("hamburger");
+  const hamburger = document.getElementById("sidebar");
   const menu = document.querySelector(".menu");
 
   if (hamburger && menu) {
