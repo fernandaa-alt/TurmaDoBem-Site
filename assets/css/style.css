@@ -17,23 +17,22 @@ body {
 
 nav {
   display: flex;
-  align-items: center;
-  padding: 15px 30px;
+  justify-content: space-between;
+  padding: 15px 40px;
   background: #446e01;
   color: white;
 }
 
-aside {
-  display: none;
-}
-
-nav .menu {
-  list-style: none;
+nav {
   display: flex;
-  gap: 20px;
-  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  /* flex-wrap: wrap; */
+ display: flex;
   justify-content: flex-end;
   gap: 15px;
+  flex-direction: row;
 }
 
 nav .menu li a {
@@ -41,7 +40,7 @@ nav .menu li a {
   font-weight: 700;
   text-decoration: none;
   transition: 0.3s;
-  background-color: #82b62f;
+  background-color: #a0d44c;
   padding: 8px 12px;
   border-radius: 8px;
   display: flex;
@@ -105,15 +104,13 @@ nav .menu li a:hover {
   box-shadow: 0 2px 5px #805023
 }
 
-.hero-left h2, .hero-middle h2,
-.hero-right h2 {
+.hero-left h2, .hero-middle h2, .hero-right h2 {
   color: #82b62f;
   margin-bottom: 15px;
   margin-top: auto;
 }
 
-.hero-left p, .hero-middle p,
-.hero-right p {
+.hero-left p, .hero-middle p, .hero-right p {
   margin-bottom: 15px;
   color: #333;
 }
@@ -160,14 +157,16 @@ nav .menu li a:hover {
 }
 
 /* Apoiadores */
-.apoiadores, .mantenedores, .premios {
+.apoiadores, .mantenedores,.premios {
   padding: 40px 20px;
   text-align: center;
   background-color: #ffffff;
   border-top: 2px solid #eeeeee
 }
 
-.apoiadores h2, .mantenedores h2, .premios h2 {
+.apoiadores h2,
+.mantenedores h2,
+.premios h2 {
   font-size: 1.8rem;
   margin-bottom: 15px;
   color: #82b62f;
@@ -177,18 +176,22 @@ nav .menu li a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
   gap: 40px;
   margin-top: 20px;
 }
 
-.apoiadores .logos img, .mantenedores .logos img, .premios .logos img {
+.apoiadores .logos img,
+.mantenedores .logos img,
+.premios .logos img {
   max-height: 70px;
   object-fit: contain;
   transition: transform 0.3s ease;
 }
 
-.apoiadores .logos img:hover, .mantenedores .logos img:hover, .premios .logos img:hover {
+.apoiadores .logos img:hover,
+.mantenedores .logos img:hover,
+.premios .logos img:hover {
   transform: scale(1.05);
 }
 
@@ -206,7 +209,7 @@ footer p {
 }
 
 footer .social a {
-  background-color:rgb(255, 250, 187);
+  background-color: rgb(255, 250, 187);
   padding: 10px;
   border-radius: 10px;
   color: #eea300;
@@ -226,19 +229,19 @@ footer .social a:hover {
   padding: 60px 30px;
   text-align: center;
 }
- 
+
 .form h1 {
   color: #446e01;
   margin-bottom: 10px;
   font-size: 2rem;
 }
- 
+
 .form h2 {
   color: #82b62f;
   margin-bottom: 40px;
   font-size: 1.4rem;
 }
- 
+
 .form form {
   background: #fffbe8;
   border-radius: 12px;
@@ -251,13 +254,13 @@ footer .social a:hover {
   gap: 15px;
   text-align: left;
 }
- 
+
 .form label {
   color: #446e01;
   font-weight: 600;
   margin-bottom: 5px;
 }
- 
+
 .form input,
 .form textarea {
   width: 100%;
@@ -268,19 +271,19 @@ footer .social a:hover {
   background-color: #fff;
   transition: 0.3s ease;
 }
- 
+
 .form input:focus,
 .form textarea:focus {
   border-color: #82b62f;
   outline: none;
   box-shadow: 0 0 4px rgba(130, 182, 47, 0.4);
 }
- 
+
 .form textarea {
   min-height: 120px;
   resize: vertical;
 }
- 
+
 .form button {
   background: #82b62f;
   color: #fff;
@@ -293,11 +296,11 @@ footer .social a:hover {
   cursor: pointer;
   transition: 0.3s ease;
 }
- 
+
 .form button:hover {
   background: #446e01;
 }
- 
+
 /* ---------- FAQ PAGINA ---------- */
 h2 {
   text-align: center;
@@ -306,7 +309,7 @@ h2 {
   margin-bottom: 40px;
   font-size: 2rem;
 }
- 
+
 .faq {
   background: #fff8e0;
   padding: 60px 30px;
@@ -316,7 +319,7 @@ h2 {
   max-width: 900px;
   margin: 0 auto 80px auto;
 }
- 
+
 .faq-item {
   background: #fffbe8;
   border-radius: 12px;
@@ -325,18 +328,18 @@ h2 {
   transition: 0.3s ease;
   cursor: pointer;
 }
- 
+
 .faq-item:hover {
   transform: translateY(-3px);
   box-shadow: 0 4px 8px rgba(68, 110, 1, 0.25);
 }
- 
+
 .faq-item h3 {
   color: #82b62f;
   margin-bottom: 10px;
   font-size: 1.3rem;
 }
- 
+
 .faq-item p {
   color: #446e01;
   line-height: 1.6;
@@ -345,7 +348,7 @@ h2 {
 
 
 /* ---------- SOBRE PAGINA ---------- */
- 
+
 /* Introdução */
 .intro-sobre {
   background: #ffe2a3;
@@ -353,19 +356,19 @@ h2 {
   text-align: center;
   border-bottom: 2px solid #f3d46b;
 }
- 
+
 .intro-sobre h1 {
   font-size: 2.2rem;
   color: #446e01;
   margin-bottom: 25px;
 }
- 
+
 .intro-sobre p {
   max-width: 950px;
   margin: 0 auto 20px;
   color: #333;
 }
- 
+
 .intro-sobre a {
   display: inline-block;
   margin-top: 15px;
@@ -377,12 +380,12 @@ h2 {
   font-weight: 700;
   transition: 0.3s;
 }
- 
+
 .intro-sobre a:hover {
   background: #eea300;
   color: #2b1c00;
 }
- 
+
 /* Missão e Valores */
 .missao-valores {
   background: #fff8e0;
@@ -393,7 +396,7 @@ h2 {
   padding: 60px 20px;
   text-align: center;
 }
- 
+
 .missao-valores div {
   background: #fffbe8;
   border-radius: 10px;
@@ -402,85 +405,89 @@ h2 {
   flex: 1 1 300px;
   max-width: 400px;
 }
- 
+
 .missao-valores h2 {
   color: #82b62f;
   margin-bottom: 15px;
   margin-top: 15px;
 }
- 
+
 .missao-valores p {
   color: #333;
   font-size: 1rem;
 }
- 
+
 /* Como nasceu */
 .como-nasceu {
   padding: 60px 30px;
   background: #ffe2a3;
   text-align: center;
 }
- 
+
 .como-nasceu h2 {
   color: #82b62f;
   font-size: 1.8rem;
   margin-bottom: 20px;
 }
- 
+
 .como-nasceu p {
   max-width: 900px;
   margin: 0 auto 15px;
 }
- 
+
 /* Fundador */
 .fundador {
   background: #fffbe8;
   padding: 60px 30px;
   text-align: center;
 }
- 
+
 .fundador h2 {
   color: #82b62f;
   font-size: 1.8rem;
   margin-bottom: 20px;
 }
- 
+
 .fundador p {
   max-width: 900px;
   margin: 0 auto 15px;
 }
- 
+
 .imagem-fundador {
   height: 250px;
   display: flex;
   justify-content: center;
   margin-top: 15px;
   margin-bottom: 25px;
- 
+
 }
- 
+
 /* Conselhos */
- 
+
 .conselhos {
   background: #ffe2a3;
   padding: 60px 30px;
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
 }
- 
+
 .conselhos h2 {
   color: #446e01;
   margin-bottom: 40px;
   font-size: 1.9rem;
   width: 100%;
 }
- 
+
 .conselhos .cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 25px;
 }
- 
+
 .conselhos .cards div {
   background: #fffbe8;
   border-radius: 10px;
@@ -490,30 +497,17 @@ h2 {
   margin: 10px;
   text-align: left;
 }
- 
+
 .conselhos h3 {
   color: #82b62f;
   margin-bottom: 10px;
 }
- 
+
 .conselhos h4 {
   color: #eea300;
   margin-top: 10px;
 }
- 
-/* Conselhos */
-.conselhos {
-  background: #ffe2a3;
-  padding: 60px 30px;
-  text-align: center;
-}
- 
-.conselhos h2 {
-  color: #446e01;
-  margin-bottom: 40px;
-  font-size: 1.9rem;
-}
- 
+
 .conselhos div {
   background: #fffbe8;
   border-radius: 10px;
@@ -522,36 +516,19 @@ h2 {
   flex: 1 1 300px;
   margin: 10px;
 }
- 
-.conselhos {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 25px;
-}
- 
-.conselhos h3 {
-  color: #82b62f;
-  margin-bottom: 10px;
-}
- 
-.conselhos h4 {
-  color: #eea300;
-  margin-top: 10px;
-}
- 
+
 /* Diretores */
 .diretores {
   background: #fff8e0;
   text-align: center;
   padding: 60px 30px;
 }
- 
+
 .diretores h2 {
   color: #82b62f;
   margin-bottom: 20px;
 }
- 
+
 .diretores p {
   margin-bottom: 8px;
   font-weight: 600;
@@ -574,17 +551,17 @@ h2 {
 /* ----------------- FORMULARIOS DE LOGIN E CADASTRO ----------------- */
 
 .forms-container {
-  display: flex;              
-  gap: 40px;                  
-  justify-content: center;   
-  align-items: flex-start;    
-  flex-wrap: wrap;          
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
   padding: 20px;
 }
 
 .forms-container .form {
-  flex: 1 1 420px;   
-  max-width: 520px;   
+  flex: 1 1 420px;
+  max-width: 520px;
   box-sizing: border-box;
 }
 
@@ -593,7 +570,7 @@ h2 {
   padding: 40px 30px;
   text-align: center;
   border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(68,110,1,0.15);
+  box-shadow: 0 2px 8px rgba(68, 110, 1, 0.15);
 }
 
 /* Mensagens de erro */
@@ -606,18 +583,19 @@ h2 {
 }
 
 .has-error {
-  outline: 2px solid rgba(176,0,32,0.08);
-  box-shadow: 0 0 0 3px rgba(176,0,32,0.04);
+  outline: 2px solid rgba(176, 0, 32, 0.08);
+  box-shadow: 0 0 0 3px rgba(176, 0, 32, 0.04);
 }
 
 /* toggle buttons (Login/Cadastrar) */
 .forms-toggle button {
   background: transparent;
-  border: 1px solid rgba(68,110,1,0.08);
+  border: 1px solid rgba(68, 110, 1, 0.08);
   padding: 8px 12px;
   border-radius: 8px;
   cursor: pointer;
 }
+
 .forms-toggle button.active {
   background: #82b62f;
   color: white;
@@ -641,12 +619,14 @@ h2 {
   border-radius: 6px;
   opacity: 0;
   transition: all 0.4s ease;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
   z-index: 9999;
 }
+
 .toast.error {
   background: #b50000;
 }
+
 .toast.visible {
   opacity: 1;
   transform: translateY(-5px);
@@ -694,7 +674,7 @@ h2 {
 
 .checkbox-card:hover {
   border-color: #82b62f;
-  box-shadow: 0 2px 8px rgba(130,182,47,0.2);
+  box-shadow: 0 2px 8px rgba(130, 182, 47, 0.2);
 }
 
 .checkbox-card input[type="checkbox"] {
@@ -748,37 +728,32 @@ select:focus {
   box-shadow: 0 0 5px #82b62f;
 }
 
-  .hero {
-    padding: 30px 10px;
-  }
+.hero {
+  padding: 30px 10px;
+}
 
-  .hero-top h1 {
-    font-size: 1.6rem;
-  }
+.hero-top h1 {
+  font-size: 1.6rem;
+}
 
-  .hero-top p {
-    font-size: 1rem;
-  }
+.hero-top p {
+  font-size: 1rem;
+}
 
-  .hero img {
-    max-width: 100%;
-  }
+.hero img {
+  max-width: 100%;
+}
 
-  .stats {
-    flex-direction: column;
-    text-align: center;
-    gap: 20px;
-  }
+.stats {
+  flex-direction: row;
+  text-align: center;
+  gap: 20px;
+}
 
-  .depoimentos-galeria {
-    flex-direction: column;
-    align-items: center;
-  }
-/* 
-  footer {
-    padding: 30px 15px;
-  } */
-
+.depoimentos-galeria {
+  flex-direction: row;
+  align-items: center;
+}
 
 /* Layout padrão (larger screens) */
 .hero-panels {
@@ -789,67 +764,69 @@ select:focus {
   gap: 20px;
 }
 
-/* nav {
+nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 12px 24px;
-  flex-wrap: wrap; 
-  gap: 12px; 
-} */
-
-/* ===== NAVBAR ===== */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 12px 28px;
-  background: #fff;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  position: relative;
+  /* flex-wrap: wrap; */
+  gap: 12px;
 }
 
-.navbar .logo img {
-  height: 48px;
-  width: auto;
-  object-fit: contain;
-  transition: height 0.2s ease;
+
+
+
+/*====LOGO IMG ======*/
+
+.logo {
+  width: 100px;
+  height: auto;
 }
 
-.nav-links {
-  display: flex;
-  gap: 24px;
+.logo:hover {
+  transform: scale(1.05);
+}
+
+/* SIDEBAR */
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100vh;
+  background: #548802;
+  color: white;
+  padding: 35px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  transition: left 0.3s ease;
+  z-index: 999;
+  padding-top: 80px;
+}
+
+.sidebar.active {
+  left: 0;
+}
+
+.sidebar ul {
   list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
-.nav-links a {
+.sidebar ul li {
+  margin: 10px 0;
+  text-align: center;
+}
+
+.sidebar ul li a {
   text-decoration: none;
-  color: #333;
-  font-weight: 500;
-  padding: 8px 12px;
-  border-radius: 6px;
-  transition: all 0.3s ease;
+  color: #093000;
+  font-size: 18px;
+  font-weight: 530;
+  transition: color 0.2s ease;
 }
 
-.nav-links a:hover {
-  background: rgba(68,110,1,0.08);
-  color: #446e01;
-}
-
-.menu-icon {
-  display: none;
-  font-size: 28px;
-  cursor: pointer;
-  user-select: none;
-  background: none;
-  border: none;
-  color:#d5ecae
-}
-
-.menu-checkbox {
-  display: none;
+.sidebar ul li a:hover {
+  color: #ffffff;
 }
 
 /* =========================================================
@@ -880,9 +857,9 @@ select:focus {
     display: block;
   }
 
-    .hero-panels {
+  .hero-panels {
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
     gap: 16px;
   }
 
@@ -892,12 +869,14 @@ select:focus {
     width: 90%;
   }
 
-    .hero-panels {
+  .hero-panels {
     flex-direction: column;
     align-items: center;
   }
 
-  .hero-left, .hero-middle, .hero-right {
+  .hero-left,
+  .hero-middle,
+  .hero-right {
     flex: 1 1 100%;
     max-width: 400px;
   }
@@ -906,54 +885,56 @@ select:focus {
     flex-wrap: wrap;
     justify-content: center;
   }
-  
+
   aside {
     display: block;
   }
 }
 
-/* Responsividade */
-@media (min-width: 768px) {
-  aside {
+#hamburger {
+  display: none;
+}
+
+/* Small devices (tablets, 600px and up) */
+@media (max-width: 767px) {
+
+  nav .menu {
+    display: none;
+  }
+
+  .logo img {
+    height: 40px;
+  }
+
+  .sidebar {
+    width: 220px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media (max-width: 992px) {
+  #hamburger {
     display: block;
   }
 
-  .hero-buttons {
-    flex-direction: row;
-    justify-content: center;
+  aside {
+    display: block;
   }
-  .hero .btn {
-    width: auto;
-  }
-
-  /* página sobre */ 
-    .missao-valores {
-    flex-direction: column;
-  }
-  .conselhos {
-    flex-direction: column;
-  }
-  nav .logo img {
-    max-width: 25%;
+  
+  nav {
+    padding: 15px 60px;
   }
 
-/* index */
-    nav .menu {
-    flex-direction: row;
-    justify-content: flex-end;
+  .hero-top h1 {
+    font-size: 2.4rem;
   }
 
-  .hero-panels {
-    flex-direction: row;
-    justify-content: center;
+  .hero-top p {
+    font-size: 1.2rem;
   }
 
-  .hero-left, .hero-middle, .hero-right {
-    flex: 1 1 300px;
-  }
-
-  .missao-valores, .conselhos {
-    flex-direction: row;
+  .depoimentos-galeria blockquote {
+    width: 280px;
   }
 }
 
@@ -974,28 +955,5 @@ select:focus {
 
   .stats {
     margin: 0 auto;
-  }
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media (min-width: 992px) {
-  nav {
-    padding: 15px 60px;
-  }
-
-  .hero-top h1 {
-    font-size: 2.4rem;
-  }
-
-  .hero-top p {
-    font-size: 1.2rem;
-  }
-
-  .stats {
-    justify-content: space-around;
-  }
-
-  .depoimentos-galeria blockquote {
-    width: 280px;
   }
 }

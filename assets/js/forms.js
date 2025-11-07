@@ -181,8 +181,9 @@ function showToast(message, type = "success") {
 }
 
 // === MENU HAMBURGUER ===
+// Aob
 document.addEventListener("DOMContentLoaded", () => {
-  const hamburger = document.getElementById("sidebar");
+  const hamburger = document.getElementById("hamburger");
   const menu = document.querySelector(".menu");
 
   if (hamburger && menu) {
